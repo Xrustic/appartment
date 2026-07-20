@@ -1,15 +1,28 @@
-.photo {
-    width: 400px;
-    height: 700px;
-    max-width: 100%;
-    object-fit: cover;
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans-Regular.woff2") format("woff2");
+    font-weight: 400;
 }
 
 a {
     color: #000;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline; /* Появляется подчеркивание */
+img {
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
 }
