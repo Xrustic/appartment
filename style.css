@@ -26,10 +26,102 @@ img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     padding: 10px;
+}
+
+.scroll_photo {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    gap: 4vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    anchor-name: --my-carousel;
+    scroll-marker-group: after;
+}
+
+.scroll_photo::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  position-anchor: --my-carousel;
+}
+
+.scroll_photo::scroll-button(*):hover,
+.scroll_photo::scroll-button(*):focus {
+  opacity: 1;
+}
+
+.scroll_photo::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.scroll_photo::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+
+.scroll_photo::scroll-button(left) {
+  content: "◄" / "Previous";
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+.scroll_photo::scroll-button(right) {
+  content: "►" / "Next";
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+.scroll_photo::scroll-marker-group {
+  position: absolute;
+  position-anchor: --my-carousel;
+  top: calc(anchor(bottom) - 70px);
+  justify-self: anchor-center;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo {
+    list-style-type: none;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    scroll-snap-align: center;
+
+    flex: 0 0 100%;
+}
+
+.photo:nth-child(even) {
+    background-color: cyan;
+}
+
+.photo::scroll-marker {
+  content: attr(data-accName);
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: 16px;
+}
+
+.photo::scroll-marker:target-current {
+  background-color: black;
 }
