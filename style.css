@@ -1,5 +1,12 @@
+.container {
+    max-width: 100%;
+    padding: 10px;
+}
+
 @media (max-width: 767px) {
   .container {
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
     padding: 10px;
   }
@@ -24,4 +31,5 @@ img {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
+    padding: 10px;
 }
