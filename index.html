@@ -3,15 +3,15 @@
 
     <head>
         <title>Квартира в Шушарах</title>
-        <link rel="stylesheet" href="./normalize.css">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <main>
-            <h1>Студия в Шушарах</h1>
+            <h1 class="">Студия в Шушарах</h1>
             <section>
                 <h2>Расположение: </h2>
                 <p>
@@ -36,7 +36,7 @@
                     Стандартный договор на 11 месяцев, с дальнейшим продлением, залог за 1 месяц.<br>
                 </p>
                 <p>
-                    В квартире имеется:<br>
+                    <strong>В квартире имеется:</strong><br>
                     <ul>
                         <li>телевизор</li>
                         <li>пылесос</li>
@@ -51,41 +51,94 @@
             <section>
                 <h2>Контакты: </h2>
                 <p>Ольга:</p>
-                <p><a href="tel:+79531630528">+79531630528</a></p>
-                <p><a href="https://t.me/Xrustic_72">Телеграмм</a></p>
+                <p class="contacts"><a href="tel:+79531630528">+79531630528</a></p>
+                <p class="contacts"><a href="https://t.me/Xrustic_72">Телеграмм</a></p>
             </section>
 
-            <section>
-                <ul class="scroll_photo">
-                    <li class="photo" data-accName="Item 1">
-                        <img src="./photos/room1.jpg" alt="Комната" loading="lazy">
-                    </li>
-                    <li class="photo" data-accName="Item 2">
-                        <img src="./photos/room2.jpg" alt="Комната" loading="lazy">
-                    </li>
-                    <li class="photo" data-accName="Item 3">
-                        <img src="./photos/room3.jpg" alt="Комната" loading="lazy">
-                    </li>
-                    <li class="photo" data-accName="Item 4">
-                        <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy">
-                    </li>
-                    <li class="photo" data-accName="Item 4">
-                        <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy">
-                    </li>
-                    <li class="photo" data-accName="Item 4">
-                        <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy">
-                    </li>
-                    <li class="photo" data-accName="Item 4">
-                        <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy">
-                    </li>
-                </ul>
-                <!-- <img src="./photos/room1.jpg" alt="Комната" loading="lazy">
-                <img src="./photos/room2.jpg" alt="Комната" loading="lazy">
-                <img src="./photos/room3.jpg" alt="Комната" loading="lazy">
-                <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy">
-                <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy">
-                <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy">
-                <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy"> -->
+            <section class="section-of-photos">
+                <div class="gallery-item">
+                    <a href="#pic1">
+                        <img src="./photos/room1.jpg" alt="Комната" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic1" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/room1.jpg" alt="Комната">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#pic2">
+                        <img src="./photos/room2.jpg" alt="Комната" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic2" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/room2.jpg" alt="Комната">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#pic3">
+                        <img src="./photos/room3.jpg" alt="Комната" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic3" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/room3.jpg" alt="Комната">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#pic4">
+                        <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic4" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/kitchen.jpg" alt="Кухонная зона">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#pic5">
+                        <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic5" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/balcony.jpg" alt="Балкон">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#pic6">
+                        <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic6" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/bathroom.jpg" alt="Ванная">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#pic7">
+                        <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy" class="photo">
+                    </a>
+
+                    <div id="pic7" class="overlay">
+                        <a href="#close" class="overlay-close">
+                            <img src="./photos/hallway.jpg" alt="Коридор">
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
     </body>
