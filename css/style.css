@@ -21,11 +21,85 @@ img {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
 
-.contacts {
-    margin-left: 20px;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+dl {
+    padding-left: 10px;
+}
+
+p {
+    padding-left: 10px;
+}
+
+td {
+    vertical-align: top;
+}
+
+footer {
+    background-color: beige;
+    padding: 15px;
+}
+
+.nav {
+    background-color: beige;
+    padding: 15px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column {
+    flex: 1.5;
+    box-sizing: border-box;
+}
+
+.right-column {
+    flex: 0.5;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.list {
+    display: flex;
+    gap: 8px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    flex-basis: 31%;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 .container {
@@ -33,12 +107,18 @@ body {
     padding: 10px;
 }
 
+.photo-zone {
+    background-color: beige;
+    width: 100%;
+}
+
 .section-of-photos {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 20px;
     max-inline-size: 100%;
-    margin-left: 3vh;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .gallery-item {
