@@ -30,10 +30,17 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
+    padding-left: 10px;
 }
 
 h2 {
     padding-left: 10px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: beige;
 }
 
 dl {
@@ -41,6 +48,10 @@ dl {
 }
 
 p {
+    padding-left: 10px;
+}
+
+table {
     padding-left: 10px;
 }
 
@@ -53,11 +64,6 @@ footer {
     padding: 15px;
 }
 
-.nav {
-    background-color: beige;
-    padding: 15px;
-}
-
 .link {
     text-decoration: none;
 }
@@ -65,30 +71,22 @@ footer {
 .two-column {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .left-column {
-    flex: 1.5;
+    flex: 1;
     box-sizing: border-box;
 }
 
 .right-column {
-    flex: 0.5;
+    flex: 1;
     position: sticky;
-    top: 20px;
+    top: 5px;
+    max-width: 40%;
     height: fit-content;
-    padding-left: 15px;
     box-sizing: border-box;
-}
-
-.list {
-    display: flex;
-    gap: 8px;
-    padding-left: 10px;
-    flex-wrap: wrap;
-    flex-basis: 31%;
-    padding-left: 10px;
-    list-style-type: none;
+    background-color: aqua;
 }
 
 .title {
@@ -98,18 +96,19 @@ footer {
 
 .map {
     display: flex;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10px;
-}
-
-.container {
-    max-width: 100%;
-    padding: 10px;
 }
 
 .photo-zone {
     background-color: beige;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.photos-name {
+    margin-top: -10px;
 }
 
 .section-of-photos {
@@ -135,6 +134,7 @@ footer {
     cursor: zoom-in;
     object-fit: cover;
     display: block;
+    padding-left: 10px;
 }
 
 .overlay {
@@ -184,11 +184,10 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 10px;
+  .map {
+    width: auto;
+    height: auto;
+    max-width: 80%;
   }
 
   .gallery-item {
