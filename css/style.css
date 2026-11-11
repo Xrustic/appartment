@@ -4,6 +4,10 @@
     font-weight: 400;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     color: #000;
 }
@@ -20,91 +24,67 @@ img {
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     padding: 0;
     margin: 0;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-    padding-left: 10px;
-}
-
-h2 {
-    padding-left: 10px;
-}
-
-header {
-    width: 100%;
-    height: 50px;
-    background-color: beige;
-}
-
-dl {
-    padding-left: 10px;
-}
-
-p {
-    padding-left: 10px;
-}
-
-table {
-    padding-left: 10px;
 }
 
 td {
     vertical-align: top;
 }
 
-footer {
+.padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-footer {
+    height: 15px;
     background-color: beige;
-    padding: 15px;
 }
 
 .link {
     text-decoration: none;
 }
 
-.two-column {
+.main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     gap: 20px;
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.left-column {
+.description {
     flex: 1;
-    box-sizing: border-box;
 }
 
-.right-column {
+.main-information {
     flex: 1;
-    position: sticky;
     top: 5px;
-    max-width: 40%;
     height: fit-content;
-    box-sizing: border-box;
     background-color: aqua;
 }
 
 .title {
     display: flex;
     justify-content: center;
+    font-size: 20px;
 }
 
 .map {
     display: flex;
     padding-top: 10px;
-    padding-left: 10px;
+    max-width: 100%;
+    border: 0;
 }
 
 .photo-zone {
     background-color: beige;
     width: 100%;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .photos-name {
@@ -113,11 +93,9 @@ footer {
 
 .section-of-photos {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
     max-inline-size: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .gallery-item {
@@ -125,7 +103,7 @@ footer {
     flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
-    height: 450px;
+    height: 300px;
 }
 
 .photo {
@@ -134,7 +112,6 @@ footer {
     cursor: zoom-in;
     object-fit: cover;
     display: block;
-    padding-left: 10px;
 }
 
 .overlay {
@@ -183,32 +160,37 @@ footer {
     transform: scale(1);
 }
 
-@media (max-width: 767px) {
-  .map {
-    width: auto;
-    height: auto;
-    max-width: 80%;
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .header-footer {
+    height: 30px;
+  }
+
+  .main {
+    flex-direction: row;
   }
 
   .gallery-item {
-    height: 300px;
+    height: 450px;
   }
 
-  .img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .title {
+    font-size: 25px;
+  }
+
+  .main-information {
+    position: sticky;
+    max-width: 40%;
   }
 
   .section-of-photos {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
     max-inline-size: 100%;
-    margin-left: 0%;
   }
 
   .overlay img{
