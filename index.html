@@ -1,60 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <title>Квартира в Шушарах</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <main>
-            <h1>Студия в Шушарах</h1>
-            <section>
-                <h2>Расположение: </h2>
-                <p>
-                    <a href="https://yandex.ru/maps/-/CTVCR-Z-">Новгородский проспект, 4, посёлок Шушары, Пушкинский район, Санкт-Петербург</a>
-                </p>
-                <h2>Цена: </h2>
-                <p>22000 руб., + коммуналка. </p>
-                <h2>Метраж: </h2>
-                <p>23 кв.м.</p>
-                <h2>Этаж:</h2>
-                <p>23 из 25</p>
-                <h2>Описание:</h2>
-                <p>
-                    Застекленный балкон. <br>
-                    Коммуналка по счетчикам, кроме отопления.<br>
-                    Счетчики отопления в доме не стоят, считают от площади квартиры.<br>
-                    Зимой было в районе 2500, включая отопление (отопление в районе 1000), летом сумма без отопления. <br>
-                    Интернет проведен, на данный момент отключен. Нужно будет заключить самим контракт.<br>
-                    Стандартный договор на 11 месяцев, с дальнейшим продлением, залог за 1 месяц.<br>
-                </p>
-                <p>
-                    В квартире имеется:<br>
-                    - телевизор<br>
-                    - пылесос<br>
-                    - индукционная плита<br>
-                    - утюг<br>
-                    - микроволновка<br>
-                    - вентилятор
-                </p>
-                <h2>Контакты: </h2>
-                <p>Ольга:</p>
-                <p><a href="tel:+79531630528">+79531630528</a></p>
-                <p><a href="https://t.me/Xrustic_72">Телеграмм</a></p>
+        <header class="header-footer"></header>
+
+        <h1 class="title padding">Студия в Шушарах</h1>
+
+        <main class="main">
+            <section class="description">
+                <section class="photo-zone padding">
+                    <h2 class="photos-name"><u>Фотографии:</u></h2>
+                    <section class="section-of-photos">
+                        <div class="gallery-item">
+                            <a href="#pic1">
+                                <img src="./photos/room1.jpg" alt="Комната" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic1" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/room1.jpg" alt="Комната">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a href="#pic2">
+                                <img src="./photos/room2.jpg" alt="Комната" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic2" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/room2.jpg" alt="Комната">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a href="#pic3">
+                                <img src="./photos/room3.jpg" alt="Комната" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic3" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/room3.jpg" alt="Комната">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a href="#pic4">
+                                <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic4" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/kitchen.jpg" alt="Кухонная зона">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a href="#pic5">
+                                <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic5" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/balcony.jpg" alt="Балкон">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a href="#pic6">
+                                <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic6" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/bathroom.jpg" alt="Ванная">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a href="#pic7">
+                                <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy" class="photo">
+                            </a>
+
+                            <div id="pic7" class="overlay">
+                                <a href="#close" class="overlay-close">
+                                    <img src="./photos/hallway.jpg" alt="Коридор">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <h2 id="information">Описание:</h2>
+                    <p>
+                        Застекленный балкон. <br>
+                        Коммуналка по счетчикам, кроме отопления.<br>
+                        Счетчики отопления в доме не стоят, считают от площади квартиры.<br>
+                        Зимой было в районе 2500, включая отопление (отопление в районе 1000), летом сумма без отопления. <br>
+                        Интернет проведен, на данный момент отключен. Нужно будет заключить самим контракт.<br>
+                        Стандартный договор на 11 месяцев, с дальнейшим продлением, залог за 1 месяц.<br>
+                    </p>
+                    <p>
+                        <strong>В квартире имеется:</strong><br>
+                        <ul>
+                            <li>телевизор</li>
+                            <li>пылесос</li>
+                            <li>индукционная плита</li>
+                            <li>утюг</li>
+                            <li>микроволновка</li>
+                            <li>вентилятор</li>
+                        </ul>
+                    </p>
+                </section>
             </section>
 
-            <section>
-                <img src="./photos/room1.jpg" alt="Комната" loading="lazy">
-                <img src="./photos/room2.jpg" alt="Комната" loading="lazy">
-                <img src="./photos/room3.jpg" alt="Комната" loading="lazy">
-                <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy">
-                <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy">
-                <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy">
-                <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy">
+            <section class="main-information padding">
+                <section>
+                    <h2 id="cost">Стоимость:</h2>
+                    <dl>
+                        <dt><strong>Цена:</strong> 22000 руб., + коммунальные услуги</dt>
+                        <dt><strong>Метраж:</strong> 23 кв.м. (студия)</dt>
+                        <dt><strong>Этаж:</strong> 23 из 25</dt>
+                    </dl>
+                </section>
+
+                <section>
+                    <h2>Контакты: </h2>
+                    <table>
+                        <tr>
+                            <td rowspan="2">Ольга:</td>
+                            <td><a href="tel:+79531630528">+79531630528</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://t.me/Xrustic_72">Телеграмм</a></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2 id="location">Расположение: </h2>
+                    <p>
+                        <a href="https://yandex.ru/maps/-/CTVCR-Z-">Новгородский проспект, 4, посёлок Шушары, Пушкинский район, Санкт-Петербург</a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.3211869882161!2d30.366619594638678!3d59.81121339772293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962501936982b9%3A0xb9c5f06292a8336a!2z0J3QvtCy0LPQvtGA0L7QtNGB0LrQuNC5INC_0YAuLCA0LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk2NjI2!5e1!3m2!1sru!2sru!4v1792939974675!5m2!1sru!2sru" class="map" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </p>
+                </section>
             </section>
         </main>
     </body>
+
+    <footer class="header-footer"></footer>
 </html>
