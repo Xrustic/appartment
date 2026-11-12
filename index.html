@@ -18,91 +18,19 @@
             <section class="description">
                 <section class="photo-zone padding">
                     <h2 class="photos-name"><u>Фотографии:</u></h2>
-                    <section class="section-of-photos">
-                        <div class="gallery-item">
-                            <a href="#pic1">
-                                <img src="./photos/room1.jpg" alt="Комната" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic1" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/room1.jpg" alt="Комната">
-                                </a>
-                            </div>
+                    <div class="carousel-of-photos">
+                        <div class="carousel-track" id="track">
+                            <img src="./photos/room1.jpg" alt="Комната" loading="lazy">
+                            <img src="./photos/room2.jpg" alt="Комната" loading="lazy">
+                            <img src="./photos/room3.jpg" alt="Комната" loading="lazy">
+                            <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy">
+                            <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy">
+                            <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy">
+                            <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy">
                         </div>
-
-                        <div class="gallery-item">
-                            <a href="#pic2">
-                                <img src="./photos/room2.jpg" alt="Комната" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic2" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/room2.jpg" alt="Комната">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item">
-                            <a href="#pic3">
-                                <img src="./photos/room3.jpg" alt="Комната" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic3" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/room3.jpg" alt="Комната">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item">
-                            <a href="#pic4">
-                                <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic4" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/kitchen.jpg" alt="Кухонная зона">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item">
-                            <a href="#pic5">
-                                <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic5" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/balcony.jpg" alt="Балкон">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item">
-                            <a href="#pic6">
-                                <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic6" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/bathroom.jpg" alt="Ванная">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="gallery-item">
-                            <a href="#pic7">
-                                <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy" class="photo">
-                            </a>
-
-                            <div id="pic7" class="overlay">
-                                <a href="#close" class="overlay-close">
-                                    <img src="./photos/hallway.jpg" alt="Коридор">
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+                        <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+                        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+                    </div>
                 </section>
 
                 <section>
@@ -161,6 +89,7 @@
                 </section>
             </section>
         </main>
+        <script src="test.js"></script>
     </body>
 
     <footer class="header-footer"></footer>
