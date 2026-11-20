@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Сдается квартира-студия в поселке Шушары, СПб.">
     </head>
 
     <body>
@@ -23,10 +24,14 @@
                             <img src="./photos/room1.jpg" alt="Комната" loading="lazy">
                             <img src="./photos/room2.jpg" alt="Комната" loading="lazy">
                             <img src="./photos/room3.jpg" alt="Комната" loading="lazy">
+                            <img src="./photos/room4.jpg" alt="Комната" loading="lazy">
                             <img src="./photos/kitchen.jpg" alt="Кухонная зона" loading="lazy">
                             <img src="./photos/balcony.jpg" alt="Балкон" loading="lazy">
                             <img src="./photos/bathroom.jpg" alt="Ванная" loading="lazy">
                             <img src="./photos/hallway.jpg" alt="Коридор" loading="lazy">
+                            <img src="./photos/view-from-the-window1.jpg" alt="Комната" loading="lazy">
+                            <img src="./photos/view-from-the-window2.jpg" alt="Комната" loading="lazy">
+                            <img src="./photos/view-from-the-window3.jpg" alt="Комната" loading="lazy">
                         </div>
                         <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
                         <button class="carousel-btn next" id="nextBtn">&#10095;</button>
@@ -37,73 +42,99 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td class="text-line" rowspan="2"><img src="./photos/flaticon/blueprint.png" class="flavicon"></td>
-                                <td class="correct-padding"><strong>23м<sup>2</sup></strong></td>
+                                <td>
+                                    <img src="./photos/flaticon/blueprint.png" class="flavicon" rowspan="2">
+                                    <p class="text-inline"><strong>23м<sup>2</sup></strong><br>
+                                        общая
+                                    </p>
+                                </td>
 
-                                <td class="text-line" rowspan="2"><img src="./photos/flaticon/up-arrow.png" class="flavicon"></td>
-                                <td class="correct-padding"><strong>23 этаж</strong></td>
+                                <td>
+                                    <img src="./photos/flaticon/up-arrow.png" class="flavicon" rowspan="2">
+                                    <p class="text-inline"><strong>23 этаж</strong><br>
+                                        из 25
+                                    </p>
+                                </td>
 
-                                <td class="text-line" rowspan="2"><img src="./photos/flaticon/calendar.png" class="flavicon"></td>
-                                <td class="correct-padding"><strong>///</strong></td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="text-line">общая</td>
-                                <td class="text-line">из 25</td>
-                                <td class="text-line">год постройки</td>
+                                <td>
+                                    <img src="./photos/flaticon/calendar.png" class="flavicon" rowspan="2">
+                                    <p class="text-inline"><strong>2018</strong><br>
+                                        год постройки
+                                    </p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                    <hr>
                 </section>
 
                 <section>
                     <h2 id="information">Описание:</h2>
-                    <p>
-                        Застекленный балкон. <br>
-                        Коммуналка по счетчикам, кроме отопления.<br>
-                        Счетчики отопления в доме не стоят, считают от площади квартиры.<br>
-                        Зимой было в районе 2500, включая отопление (отопление в районе 1000), летом сумма без отопления. <br>
-                        Интернет проведен, на данный момент отключен. Нужно будет заключить самим контракт.<br>
-                        Стандартный договор на 11 месяцев, с дальнейшим продлением, залог за 1 месяц.<br>
-                    </p>
+                    <ul>
+                        <li>Застекленный балкон.</li>
+                        <li>Коммуналка по счетчикам, кроме отопления.</li>
+                        <li>Счетчики отопления в доме не стоят, считают от площади квартиры.</li>
+                        <li>Зимой было в районе 2500, включая отопление (отопление в районе 1000), летом сумма без отопления.</li>
+                        <li>Интернет проведен, на данный момент отключен. Нужно будет заключить самим контракт.</li>
+                        <li>Стандартный договор на 11 месяцев, с дальнейшим продлением, залог за 1 месяц.</li>
+                    </ul>
+                    
                     <p>
                         <strong>В квартире имеется:</strong><br>
-                        <ul>
-                            <li>телевизор</li>
-                            <li>пылесос</li>
-                            <li>индукционная плита</li>
-                            <li>утюг</li>
-                            <li>микроволновка</li>
-                            <li>вентилятор</li>
-                        </ul>
                     </p>
+                    <ul class="object">
+                        <li class="list-object">
+                            <img src="./photos/flaticon/tv.png" class="flavicon-object">
+                            <span>телевизор</span>
+                        </li>
+                        <li class="list-object">
+                            <img src="./photos/flaticon/vacuum.png" class="flavicon-object">
+                            <span>пылесос</span>
+                        </li>
+                        <li class="list-object">
+                            <img src="./photos/flaticon/cooking.png" class="flavicon-object">
+                            <span>индукционная плита</span>
+                        </li>
+                        <li class="list-object">
+                            <img src="./photos/flaticon/iron.png" class="flavicon-object">
+                            <span>утюг</span>
+                        </li>
+                        <li class="list-object">
+                            <img src="./photos/flaticon/microwave.png" class="flavicon-object">
+                            <span>микроволновка</span>
+                        </li>
+                        <li class="list-object">
+                            <img src="./photos/flaticon/ventilation-system.png" class="flavicon-object">
+                            <span>вентилятор</span>
+                        </li>
+                        <li class="list-object">
+                            <img src="./photos/flaticon/laundry.png" class="flavicon-object">
+                            <span>стиральная машина</span>
+                        </li>
+                    </ul>
                 </section>
             </section>
 
             <section class="main-information padding">
-                <section>
-                    <h2 id="cost">Стоимость:</h2>
-                    <p><strong>Цена:</strong> 22000 руб., + коммунальные услуги</p>
-                </section>
+                <div class="rent-an-apartment">
+                    <section>
+                        <h2 id="cost">Стоимость:</h2>
+                        <p><strong>Цена:</strong> 22000 руб., + коммунальные услуги</p>
+                    </section>
 
-                <section>
-                    <h2>Контакты: </h2>
-                    <table>
-                        <tr>
-                            <td rowspan="2">Ольга:</td>
-                            <td><a href="tel:+79531630528">+79531630528</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://t.me/Xrustic_72">Телеграмм</a></td>
-                        </tr>
-                    </table>
-                </section>
+                    <section>
+                        <h2>Контакты: </h2>
+                        <dl>
+                            <dt>Ольга:</dt>
+                            <dd><a href="tel:+79531630528">+79531630528</a></dd><br>
+                            <dd><a href="https://t.me/Xrustic_72" class="telegram">Телеграм</a></dd>
+                        </dl>
+                    </section>
+                </div>
 
-                <section>
+                <section class="location">
                     <h2 id="location">Расположение: </h2>
                     <p>
-                        <a href="https://yandex.ru/maps/-/CTVCR-Z-">Новгородский проспект, 4, посёлок Шушары, Пушкинский район, Санкт-Петербург</a>
+                        <a href="https://yandex.ru/maps/-/CTVCR-Z-" class="adress">Новгородский проспект, 4, посёлок Шушары, Пушкинский район, Санкт-Петербург</a>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.3211869882161!2d30.366619594638678!3d59.81121339772293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962501936982b9%3A0xb9c5f06292a8336a!2z0J3QvtCy0LPQvtGA0L7QtNGB0LrQuNC5INC_0YAuLCA0LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk2NjI2!5e1!3m2!1sru!2sru!4v1792939974675!5m2!1sru!2sru" class="map" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </p>
                 </section>
