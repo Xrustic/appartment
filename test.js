@@ -72,3 +72,14 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') showImage(currentIndexPhoto + 1);
   if (e.key === 'Escape') enlarged_photo.classList.remove('active');
 });
+
+const phoneBtn = document.getElementById('number');
+const tgBtn = document.getElementById('telegram');
+
+phoneBtn.addEventListener('click', () => {
+  phoneBtn.outerHTML = '<a href="tel:+79531630528" class="contact">+7 (953) 163-05-28</a>';
+});
+
+tgBtn.addEventListener('click', () => {
+  tgBtn.outerHTML = '<a href="https://t.me/Xrustic_72"  class="contact">Telegram</a>';
+});
